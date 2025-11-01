@@ -1,1 +1,0 @@
-"# Traffic-accident-severity-prediction" 
