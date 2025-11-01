@@ -1,0 +1,101 @@
+Time,Day_of_week,Age_band_of_driver,Sex_of_driver,Accident_severity,Type_of_vehicle,Weather_conditions,Road_surface_type,Number_of_vehicles_involved,Number_of_casualties
+17:02:00,Monday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,2
+17:02:00,Monday,31-50,Male,Slight Injury,Public (> 45 seats),Normal,Asphalt roads,2,2
+17:02:00,Monday,18-30,Male,Serious Injury,Lorry (41?100Q),Normal,Asphalt roads,2,2
+01:06:00,Sunday,18-30,Male,Slight Injury,Public (> 45 seats),Normal,Earth roads,2,2
+01:06:00,Sunday,18-30,Male,Slight Injury,,Normal,Asphalt roads,2,2
+14:15:00,Friday,31-50,Male,Slight Injury,,Normal,,1,1
+17:30:00,Wednesday,18-30,Male,Slight Injury,Automobile,Normal,,1,1
+17:20:00,Friday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+17:20:00,Friday,18-30,Male,Slight Injury,Lorry (41?100Q),Normal,Earth roads,2,1
+17:20:00,Friday,18-30,Male,Serious Injury,Automobile,Normal,Asphalt roads,2,1
+14:40:00,Saturday,18-30,Male,Serious Injury,Public (13?45 seats),Normal,Asphalt roads,2,1
+14:40:00,Saturday,31-50,Male,Serious Injury,Automobile,Normal,Earth roads,2,1
+17:45:00,Thursday,18-30,Male,Slight Injury,Public (> 45 seats),Normal,Asphalt roads,2,2
+17:45:00,Thursday,31-50,Male,Slight Injury,Lorry (41?100Q),Normal,Asphalt roads,2,2
+17:45:00,Thursday,31-50,Male,Serious Injury,Automobile,Normal,Asphalt roads,2,2
+22:45:00,Monday,18-30,Female,Serious Injury,Lorry (11?40Q),Raining,Asphalt roads,2,3
+22:45:00,Monday,18-30,Male,Slight Injury,Public (13?45 seats),Raining,Asphalt roads,2,3
+22:45:00,Monday,18-30,Male,Serious Injury,Public (13?45 seats),Raining,Asphalt roads,2,3
+22:45:00,Monday,18-30,Male,Slight Injury,,Raining,Asphalt roads,2,3
+08:20:00,Tuesday,18-30,Male,Serious Injury,Long lorry,Normal,Asphalt roads,2,1
+08:20:00,Tuesday,Under 18,Male,Slight Injury,Lorry (41?100Q),Normal,Asphalt roads,2,1
+15:10:00,Thursday,18-30,Male,Serious Injury,Lorry (11?40Q),Normal,Asphalt roads,1,1
+12:11:00,Thursday,18-30,Male,Serious Injury,Lorry (41?100Q),Normal,Asphalt roads,2,1
+12:11:00,Thursday,31-50,Male,Serious Injury,Public (12 seats),Normal,Asphalt roads,2,1
+18:36:00,Wednesday,18-30,Male,Slight Injury,,Normal,Asphalt roads with some distress,2,3
+18:36:00,Wednesday,18-30,Male,Slight Injury,Taxi,Normal,Asphalt roads,2,3
+18:36:00,Wednesday,18-30,Unknown,Slight Injury,,Normal,Asphalt roads,2,3
+14:35:00,Friday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,1,1
+12:25:00,Tuesday,Over 51,Unknown,Slight Injury,,Normal,Asphalt roads,2,1
+12:25:00,Tuesday,18-30,Male,Slight Injury,Lorry (41?100Q),Normal,Asphalt roads,2,1
+15:30:00,Monday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,1,1
+18:10:00,Thursday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,1,1
+15:25:00,Thursday,18-30,Male,Slight Injury,Lorry (41?100Q),Normal,Asphalt roads,2,1
+15:25:00,Thursday,31-50,Unknown,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+13:57:00,Saturday,Over 51,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+13:57:00,Saturday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+20:30:00,Friday,18-30,Male,Slight Injury,Taxi,Normal,Asphalt roads,2,2
+20:30:00,Friday,Over 51,Male,Slight Injury,,Normal,Asphalt roads,2,2
+20:30:00,Friday,Over 51,Male,Slight Injury,,Normal,Asphalt roads,2,2
+16:30:00,Sunday,Over 51,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+16:30:00,Sunday,31-50,Male,Slight Injury,Pick up upto 10Q,Normal,Asphalt roads,2,1
+21:50:00,Sunday,31-50,Male,Slight Injury,,Normal,Asphalt roads,2,2
+21:50:00,Sunday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,2
+09:12:00,Wednesday,18-30,Male,Slight Injury,Public (12 seats),Normal,Asphalt roads,2,1
+09:12:00,Wednesday,18-30,Male,Slight Injury,Public (13?45 seats),Normal,Gravel roads,2,1
+14:40:00,Friday,31-50,Male,Serious Injury,Lorry (11?40Q),Normal,Asphalt roads,1,1
+10:36:00,Friday,31-50,Male,Slight Injury,Stationwagen,Normal,Asphalt roads,2,1
+10:36:00,Friday,31-50,Male,Slight Injury,Ridden horse,Normal,Asphalt roads,2,1
+18:19:00,Monday,18-30,Male,Slight Injury,Stationwagen,Normal,Asphalt roads,2,1
+18:19:00,Monday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+19:12:00,Tuesday,18-30,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+19:12:00,Tuesday,31-50,Male,Slight Injury,Other,Normal,Asphalt roads,2,1
+11:38:00,Saturday,Over 51,Male,Slight Injury,Taxi,Normal,Asphalt roads,2,3
+11:38:00,Saturday,31-50,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,3
+11:38:00,Saturday,31-50,Male,Slight Injury,Stationwagen,Normal,Asphalt roads,2,3
+11:38:00,Saturday,18-30,Unknown,Slight Injury,Automobile,Normal,Asphalt roads,2,3
+13:30:00,Thursday,18-30,Male,Slight Injury,Public (12 seats),Normal,Asphalt roads,2,1
+13:30:00,Thursday,31-50,Male,Slight Injury,,Normal,Asphalt roads,2,1
+12:39:00,Tuesday,18-30,Unknown,Slight Injury,Automobile,Raining,Asphalt roads,2,1
+12:39:00,Tuesday,Over 51,Male,Slight Injury,Lorry (41?100Q),Raining,Gravel roads,2,1
+12:30:00,Friday,18-30,Male,Slight Injury,,Normal,Asphalt roads,2,1
+12:30:00,Friday,31-50,Male,Slight Injury,Public (> 45 seats),Normal,Asphalt roads,2,1
+16:55:00,Sunday,31-50,Male,Slight Injury,,Normal,Asphalt roads,2,1
+16:55:00,Sunday,31-50,Male,Slight Injury,Public (12 seats),Normal,Asphalt roads,2,1
+18:25:00,Monday,Unknown,Female,Slight Injury,Public (12 seats),Normal,Earth roads,2,1
+18:25:00,Monday,31-50,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+13:01:00,Thursday,31-50,Unknown,Slight Injury,,Normal,Asphalt roads,2,1
+13:01:00,Thursday,18-30,Male,Slight Injury,Automobile,Normal,,2,1
+13:45:00,Wednesday,18-30,Male,Slight Injury,Lorry (41?100Q),Normal,Gravel roads,2,1
+13:45:00,Wednesday,31-50,Male,Slight Injury,Public (12 seats),Normal,Asphalt roads,2,1
+18:45:00,Monday,18-30,Male,Slight Injury,Lorry (11?40Q),Normal,,2,1
+18:45:00,Monday,31-50,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+11:02:00,Thursday,31-50,Male,Slight Injury,Automobile,Normal,Earth roads,1,4
+11:02:00,Thursday,31-50,Male,Slight Injury,Automobile,Normal,Asphalt roads,1,4
+11:02:00,Thursday,31-50,Male,Slight Injury,Bajaj,Normal,Asphalt roads,1,4
+11:02:00,Thursday,31-50,Male,Slight Injury,Public (12 seats),Normal,Asphalt roads,1,4
+15:55:00,Tuesday,Over 51,Male,Serious Injury,Lorry (11?40Q),Normal,Asphalt roads,1,1
+15:00:00,Wednesday,Over 51,Unknown,Slight Injury,,Normal,Asphalt roads,1,1
+20:00:00,Sunday,31-50,Male,Slight Injury,,Normal,Earth roads,2,1
+20:00:00,Sunday,Under 18,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+18:48:00,Wednesday,31-50,Male,Serious Injury,Lorry (11?40Q),Normal,Asphalt roads,2,1
+18:48:00,Wednesday,31-50,Male,Serious Injury,Lorry (41?100Q),Normal,Asphalt roads,2,1
+15:55:00,Sunday,Over 51,Male,Slight Injury,Pick up upto 10Q,Normal,Asphalt roads,1,2
+15:55:00,Sunday,Over 51,Male,Slight Injury,Lorry (11?40Q),Normal,Asphalt roads,1,2
+23:25:00,Wednesday,Over 51,Unknown,Slight Injury,Stationwagen,Normal,Asphalt roads,2,3
+23:25:00,Wednesday,Over 51,Male,Slight Injury,Other,Normal,Asphalt roads,2,3
+23:25:00,Wednesday,31-50,Male,Slight Injury,Other,Normal,Asphalt roads,2,3
+07:40:00,Monday,18-30,Unknown,Serious Injury,Lorry (11?40Q),Normal,Asphalt roads,2,1
+07:40:00,Monday,18-30,Male,Serious Injury,,Normal,Asphalt roads,2,1
+15:17:00,Sunday,31-50,Male,Fatal injury,Automobile,Normal,Asphalt roads,2,1
+15:17:00,Sunday,31-50,Male,Fatal injury,Lorry (41?100Q),Normal,Earth roads,2,1
+15:50:00,Monday,18-30,Male,Slight Injury,Other,Normal,Asphalt roads,2,1
+15:50:00,Monday,18-30,Male,Slight Injury,Lorry (41?100Q),Normal,Asphalt roads,2,1
+09:45:00,Sunday,Over 51,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+09:45:00,Sunday,Over 51,Male,Slight Injury,Pick up upto 10Q,Normal,Asphalt roads,2,1
+17:35:00,Thursday,18-30,Male,Slight Injury,Lorry (41?100Q),Normal,Other,3,1
+17:35:00,Thursday,18-30,Male,Slight Injury,Public (13?45 seats),Normal,Gravel roads,3,1
+17:35:00,Thursday,31-50,Male,Slight Injury,Long lorry,Normal,Gravel roads,3,1
+20:50:00,Sunday,18-30,Unknown,Slight Injury,Automobile,Normal,Asphalt roads,2,1
+20:50:00,Sunday,Over 51,Male,Slight Injury,Automobile,Normal,Asphalt roads,2,1

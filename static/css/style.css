@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #092756, #1c3f60);
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+select, button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+
+
+
+select {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 100%;
+}
+
+select:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+select option {
+    
+    background: #333; 
+    color: #fff; 
+}
+button {
+    background: #4a77d4;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #3762bc;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    select, button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    select, button {
+        font-size: 10px;
+    }
+}

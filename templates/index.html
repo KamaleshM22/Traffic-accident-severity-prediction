@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Predict Accident Severity</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+  <script>
+    function showPrediction() {
+      const predictionText = "{{ prediction_text }}";
+      if (predictionText) {
+        Swal.fire({
+          title: 'Prediction Result',
+          text: predictionText,
+          icon: 'info',
+          confirmButtonText: 'OK'
+        });
+      }
+    }
+  </script>
+</head>
+
+<body onload="showPrediction()">
+  <div class="login">
+    <h1>Predict Accident Severity</h1>
+
+   
+    <form action="{{ url_for('predict')}}" method="post">
+      <div class="form-group">
+      <label for="day_of_week">Day of Week:</label>
+      <select name="day_of_week" required="required">
+        <option value="" disabled selected>Select Day</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select></div>
+
+      <label for="area_accident_occured">Area Accident Occurred:</label>
+      <div class="form-group">
+      <select name="area_accident_occured" required="required">
+        <option value="" disabled selected>Select Area</option>
+        <option value="Residential areas">Residential areas</option>
+        <option value="Office areas">Office areas</option>
+        <!-- <option value="Industrial areas">Industrial areas</option> -->
+        <option value="Recreational areas">Recreational areas</option>
+      </select>
+</div>
+      <label for="types_of_junction">Types of Junction:</label>
+      <select name="types_of_junction" required="required">
+        <option value="" disabled selected>Select Junction</option>
+        <option value="No junction">No junction</option>
+        <option value="Y Shape">Y Shape</option>
+        <option value="Crossing">Crossing</option>
+      </select>
+
+      <label for="cause_of_accident">Cause of Accident:</label>
+      <select name="cause_of_accident" required="required">
+        <option value="" disabled selected>Select Cause</option>
+        <option value="Moving Backward">Moving Backward</option>
+        <option value="Changing lane to the right">Changing lane to the right</option>
+        <option value="Overloading">Overloading</option>
+        <option value="No priority to pedestrian">No priority to pedestrian</option>
+        <option value="Changing lane to the left">Changing lane to the left</option>
+      </select>
+
+      <label for="type_of_collision">Type of Collision:</label>
+      <select name="type_of_collision" required="required">
+        <option value="" disabled selected>Select Collision</option>
+        <option value="Collision with roadside-parked vehicles">Collision with roadside-parked vehicles</option>
+        <option value="Vehicle with vehicle collision">Vehicle with vehicle collision</option>
+        <option value="Rollover">Rollover</option>
+        <option value="Collision with roadside objects">Collision with roadside objects</option>
+      </select>
+
+      <label for="number_of_vehicles_involved">Number of Vehicles Involved:</label>
+      <select name="number_of_vehicles_involved" required="required">
+        <option value="" disabled selected>Select Number</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <label for="type_of_vehicle">Type of Vehicle:</label>
+      <select name="type_of_vehicle" required="required">
+        <option value="" disabled selected>Select Vehicle</option>
+        <option value="Automobile">Automobile</option>
+        <option value="Public (> 45 seats)">Public (> 45 seats)</option>
+        <option value="Lorry (41?100Q)">Lorry (41?100Q)</option>
+        <option value="Public (13?45 seats)">Public (13?45 seats)</option>
+        <option value="Lorry (11?40Q)">Lorry (11?40Q)</option>
+        <option value="Long lorry">Long lorry</option>
+        <option value="Public (12 seats)">Public (12 seats)</option>
+        <option value="Taxi">Taxi</option>
+        <option value="Pick up upto 10Q">Pick up upto 10Q</option>
+        <option value="Stationwagen">Stationwagen</option>
+        <option value="Ridden horse">Ridden horse</option>
+        <option value="Other">Other</option>
+        <option value="Bajaj">Bajaj</option>
+        <option value="Turbo">Turbo</option>
+        <option value="Motorcycle">Motorcycle</option>
+        <option value="Special vehicle">Special vehicle</option>
+        <option value="Bicycle">Bicycle</option>
+      </select>
+
+      <label for="service_year_of_vehicle">Service Year of Vehicle:</label>
+      <select name="service_year_of_vehicle" required="required">
+        <option value="" disabled selected>Select Service Year</option>
+        <option value="Unknown">Unknown</option>
+        <option value="Below 1yr">Below 1yr</option>
+        <option value="1-2yr">1-2yr</option>
+        <option value="2-5yrs">2-5yrs</option>
+        <option value="5-10yrs">5-10yrs</option>
+        <option value="Above 10yr">Above 10yr</option>
+      </select>
+
+      <label for="vehicle_driver_relation">Vehicle Driver Relation:</label>
+      <select name="vehicle_driver_relation" required="required">
+        <option value="" disabled selected>Select Relation</option>
+        <option value="Employee">Employee</option>
+        <option value="Unknown">Unknown</option>
+        <option value="Owner">Owner</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="driving_experience">Driving Experience:</label>
+      <select name="driving_experience" required="required">
+        <option value="" disabled selected>Select Experience</option>
+        <option value="No Licence">No Licence</option>
+        <option value="1-2yr">1-2yr</option>
+        <option value="2-5yr">2-5yr</option>
+        <option value="5-10yr">5-10yr</option>
+        <option value="Above 10yr">Above 10yr</option>
+      </select>
+
+      <label for="age_band_of_driver">Age Band of Driver:</label>
+      <select name="age_band_of_driver" required="required">
+        <option value="" disabled selected>Select Age Band</option>
+        <option value="Unknown">Unknown</option>
+        <option value="Under 18">Under 18</option>
+        <option value="18-30">18-30</option>
+        <option value="31-50">31-50</option>
+        <option value="Over 51">Over 51</option>
+      </select>
+
+      <label for="sex_of_driver">Sex of Driver:</label>
+      <select name="sex_of_driver" required="required">
+        <option value="" disabled selected>Select Sex</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Unknown">Unknown</option>
+      </select>
+
+      <label for="educational_level">Educational Level:</label>
+      <select name="educational_level" required="required">
+        <option value="" disabled selected>Select Education</option>
+        <option value="Unknown">Unknown</option>
+        <option value="Illiterate">Illiterate</option>
+        <option value="Writing & reading">Writing & reading</option>
+        <option value="Elementary school">Elementary school</option>
+        <option value="Junior high school">Junior high school</option>
+        <option value="High school">High school</option>
+        <option value="Above high school">Above high school</option>
+      </select>
+
+      <label for="number_of_casualties">Number of Casualties:</label>
+      <select name="number_of_casualties" required="required">
+        <option value="" disabled selected>Select Number</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+
+      <label for="sex_of_casualty">Sex of Casualty:</label>
+      <select name="sex_of_casualty" required="required">
+        <option value="" disabled selected>Select Sex</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Unknown">Unknown</option>
+      </select>
+
+      <label for="age_band_of_casualty">Age Band of Casualty:</label>
+      <select name="age_band_of_casualty" required="required">
+        <option value="" disabled selected>Select Age Band</option>
+        <option value="Unknown">Unknown</option>
+        <option value="Under 18">Under 18</option>
+        <option value="18-30">18-30</option>
+        <option value="31-50">31-50</option>
+         <option value="Over 51">Over 51</option>
+        
+      </select>
+      
+      <label >Weather conditions:</label>
+      <select required="required">
+        <option value="" disabled selected>Weather conditions</option>
+        <option value="Normal">Normal</option>
+        <option value="Cloudy">Cloudy</option>
+        <option value="Raining">Raining</option>
+        <option value="Snow">Snow</option>
+        <option value="Windy">Windy</option>
+         <option value="Raining and Windy">Raining and Windy</option>
+         <option value="Fog or mist">Fog or mist</option>
+        <option value="Other">Other</option>
+        <option value="Unknown">Unknown</option>
+         
+        
+      </select>
+      <label >Road surface:</label>
+      <select required="required">
+        <option value="" disabled selected>Road surface</option>
+        <option value="Dry">Dry</option>
+        <option value="Snow">Snow</option>
+        <option value="Wet or damp">Wet or damp</option>
+        <option value="Flood over 3cm deep">Flood over 3cm deep</option>
+         <option value="other">other</option>
+        
+      </select>
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    
+  </div>
+</body>
+</html>
